@@ -1,0 +1,117 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-text-stroke: 1px rgb(103, 231, 248);
+}
+.clock {
+  background-color: #fff;
+  border-radius: 50%;
+  border: solid 5px #7ef3f3;
+  box-shadow: 0 0 16px 19px rgba(0, 0, 0, 0.1);
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #333;
+  position: relative;
+}
+#hour-hand {
+  position: absolute;
+  width: 0.5rem;
+  background: #434545;
+  height: 8rem;
+  transform-origin: center;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+  rotate: 0deg;
+  border: solid 2px #7ef3f3;
+}
+#minute-hand {
+  position: absolute;
+  width: 0.5rem;
+  background: #434545;
+  height: 9rem;
+  transform-origin: center;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+  rotate: 0deg;
+  border: solid 2px #7ef3f3;
+}
+#second-hand {
+  position: absolute;
+  width: 0.5rem;
+  background: #434545;
+  height: 10rem;
+  transform-origin: center;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+  rotate: 0deg;
+  border: solid 2px #7ef3f3;
+}
+#center {
+  width: 1rem;
+  height: 1rem;
+  background-color: #434545;
+  border-radius: 50%;
+  position: absolute;
+  border: solid 3px #7ef3f3;
+}
+#hour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  position: absolute;
+}
+
+.one-seven {
+  transform: rotate(30deg);
+}
+.two-eight {
+  transform: rotate(60deg);
+}
+.three-nine {
+  transform: rotate(90deg);
+}
+.four-ten {
+  transform: rotate(120deg);
+}
+.five-eleven {
+  transform: rotate(150deg);
+}
+
+.one-seven p {
+  transform: rotate(-30deg);
+}
+
+.two-eight p {
+  transform: rotate(-60deg);
+}
+
+.three-nine p {
+  transform: rotate(-90deg);
+}
+
+.four-ten p {
+  transform: rotate(-120deg);
+}
+
+.five-eleven p {
+  transform: rotate(-150deg);
+}
+
+.tw-six p {
+  transform: rotate(0deg); /* No rotation needed */
+}
