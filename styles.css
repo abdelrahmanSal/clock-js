@@ -115,3 +115,29 @@ body {
 .tw-six p {
   transform: rotate(0deg); /* No rotation needed */
 }
+/*media query for smaller screens*/
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+/*media query for medium screens*/
+@media screen and (min-width: 301px) and (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+/*media query for large screens*/
+@media screen and (min-width: 501px) and (max-width: 700px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
+}
