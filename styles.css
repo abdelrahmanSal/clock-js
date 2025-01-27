@@ -3,6 +3,9 @@ html {
 }
 
 body {
+  background-image: url(./background/bg.webp);
+  background-size: cover;
+  backdrop-filter: blur(4px);
   background-color: #f0f0f0;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -11,9 +14,10 @@ body {
   justify-content: center;
   align-items: center;
   -webkit-text-stroke: 1px rgb(103, 231, 248);
+  color: transparent;
 }
 .clock {
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 50%;
   border: solid 5px #7ef3f3;
   box-shadow: 0 0 16px 19px rgba(0, 0, 0, 0.1);
@@ -29,7 +33,7 @@ body {
 #hour-hand {
   position: absolute;
   width: 0.5rem;
-  background: #434545;
+  background: #43454500;
   height: 8rem;
   transform-origin: center;
   transform: translate(0, -50%);
@@ -40,7 +44,7 @@ body {
 #minute-hand {
   position: absolute;
   width: 0.5rem;
-  background: #434545;
+  background: #43454500;
   height: 9rem;
   transform-origin: center;
   transform: translate(0, -50%);
@@ -51,7 +55,7 @@ body {
 #second-hand {
   position: absolute;
   width: 0.5rem;
-  background: #434545;
+  background: #43454500;
   height: 10rem;
   transform-origin: center;
   transform: translate(0, -50%);
